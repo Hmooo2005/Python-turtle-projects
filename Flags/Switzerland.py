@@ -1,0 +1,50 @@
+from turtle import *
+
+def turtle_head(xx,yy):
+    penup()
+    home()
+    goto(xx,yy)
+    pendown()
+
+pensize(5)
+bgcolor('black')
+hideturtle()
+
+# red flag
+turtle_head(-60,60)
+begin_fill()
+color("red")
+for x in range(4):
+    forward(120)
+    right(90)
+end_fill()
+
+# white +
+turtle_head(-10,50)
+begin_fill()
+color("white")
+forward(20)
+right(90)
+forward(40)
+left(90)
+forward(40)
+right(90)
+forward(20)
+right(90)
+forward(40)
+left(90)
+forward(40)
+right(90)
+forward(20)
+right(90)
+forward(40)
+left(90)
+forward(40)
+right(90)
+forward(20)
+right(90)
+forward(40)
+left(90)
+forward(40)
+end_fill()
+exitonclick()
